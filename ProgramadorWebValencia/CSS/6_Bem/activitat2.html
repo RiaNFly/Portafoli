@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Comentarios</title>
+</head>
+<body>
+    <section class="comentarios">
+        <h2 class="comentarios__titulo">Comentarios</h2>
+        <form action="/comentar" method="POST" class="comentarios__formulario">
+            <label for="nombre" class="comentarios__label">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" class="comentarios__input" required>
+
+            <label for="mensaje" class="comentarios__label">Comentario:</label>
+            <textarea id="mensaje" name="mensaje" class="comentarios__textarea" rows="4" required></textarea>
+
+            <button type="submit" class="comentarios__boton">Enviar</button>
+        </form>
+        <div class="comentarios__lista">
+            <article class="comentarios__item">
+                <h3 class="comentarios__nombre">Juan Pérez</h3>
+                <p class="comentarios__texto">Me encantó el artículo, muy interesante.</p>
+                <span class="comentarios__fecha">Publicado el 13 de febrero de 2025</span>
+            </article>
+            <article class="comentarios__item">
+                <h3 class="comentarios__nombre">María López</h3>
+                <p class="comentarios__texto">Gracias por compartir esta información.</p>
+                <span class="comentarios__fecha">Publicado el 12 de febrero de 2025</span>
+            </article>
+        </div>
+
+    </section>
+
+</body>
+</html>
