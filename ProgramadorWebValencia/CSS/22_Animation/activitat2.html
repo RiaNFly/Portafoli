@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 2</title>
+    <style>
+        .contenedor {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+        }
+        .noria {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border: 5px solid black;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: rotar 10s linear infinite;
+        }
+        .cabina {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .cabina1 {
+            transform: rotate(0deg) translate(100px); 
+        }
+        .cabina2 { 
+            transform: rotate(45deg) translate(100px); 
+        }
+        .cabina3 { 
+            transform: rotate(90deg) translate(100px); 
+        }
+        .cabina4 { 
+            transform: rotate(135deg) translate(100px); 
+        }
+        .cabina5 { 
+            transform: rotate(180deg) translate(100px); 
+        }
+        .cabina6 { 
+            transform: rotate(225deg) translate(100px); 
+        }
+        .cabina7 { 
+            transform: rotate(270deg) translate(100px); 
+        }
+        .cabina8 { 
+            transform: rotate(315deg) translate(100px); 
+        }
+        @keyframes rotar {
+            from { transform: translate(-50%, -50%) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+        .base {
+            position: absolute;
+            width: 20px;
+            height: 100px;
+            background-color: black;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="base"></div>
+        <div class="noria">
+            <div class="cabina cabina1"></div>
+            <div class="cabina cabina2"></div>
+            <div class="cabina cabina3"></div>
+            <div class="cabina cabina4"></div>
+            <div class="cabina cabina5"></div>
+            <div class="cabina cabina6"></div>
+            <div class="cabina cabina7"></div>
+            <div class="cabina cabina8"></div>
+        </div>
+    </div>
+</body>
+</html>
