@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 6</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .contenedor {
+            position: relative;
+            width: 200px;
+            height: 400px;
+            background-color: transparent;
+        }
+        .cuerda {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 4px;
+            height: 300px;
+            background-color: #333;
+            transform-origin: top center;
+        }
+        .pendulo {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            background-color: #ff5722;
+            border-radius: 50%;
+            transform: translateX(-50%);
+        }
+        .cuerda {
+            animation: movimientoPendulo 2s ease-in-out infinite;
+        }
+        @keyframes movimientoPendulo {
+            0%, 100% {
+                transform: rotate(-45deg);
+            }
+            50% {
+                transform: rotate(45deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="cuerda">
+            <div class="pendulo"></div>
+        </div>
+    </div>
+
+</body>
+</html>
